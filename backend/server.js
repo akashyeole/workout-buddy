@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.use('/api/workouts', workoutRoutes)
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://Akash:akash69@c1.ddtrzgk.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log('connected to database')
     // listen to port
